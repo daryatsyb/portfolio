@@ -134,14 +134,9 @@ section {
 }
 .accordion ul li div a {
   display: block;
-  height: 550px;
+  height: 100%;
   width: 100%;
   z-index: 3;
-  padding: 15px 20px;
-  box-sizing: border-box;
-  color: #fff;
-  text-decoration: none;
-  font-family: Open Sans, sans-serif;
   transition: all 200ms ease;
 }
 .accordion ul li div a * {
@@ -252,6 +247,9 @@ section {
     min-width: 45%;
     box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.10);
     border: none;
+  }
+  .accordion ul li div a {
+    transition: none;
   }
   .accordion ul li div a h2 {
     opacity: 100%;

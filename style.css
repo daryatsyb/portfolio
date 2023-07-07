@@ -137,7 +137,16 @@ h2 {
   background-image: url("img/screen6.jpg");
   border-right: 0px;
 }
-.accordion ul:hover li, .accordion ul:focus-within li {
+.accordion ul li:hover {
+  width: 40%;
+}
+.accordion ul li:hover a h2 {
+  opacity: 100%;
+}
+.accordion ul li:focus {
+  outline: none;
+}
+/* .accordion ul:hover li, .accordion ul:focus-within li {
   width: 10%;
 }
 .accordion ul li:focus {
@@ -161,7 +170,7 @@ h2 {
 }
 .accordion ul:hover li:hover a h2 {
   opacity: 1 !important;
-}
+} */
 
 
 
@@ -194,15 +203,15 @@ h2 {
     height: auto;
     padding-bottom: 140px;
   }
-  .accordion ul:hover li {
+  /* .accordion ul:hover li {
     pointer-events: none;
   }
   .accordion ul:hover li:hover {
     pointer-events: none;
-  }
-  .accordion *:hover {
+  } */
+  /* .accordion *:hover {
     pointer-events: none;
-  }
+  } */
   .accordion ul {
     display: block;
     height: auto;

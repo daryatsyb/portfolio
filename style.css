@@ -3,18 +3,17 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  font-size: 1vw;
 }
 header {
-  height: 30vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 20px 40px;
 }
 .photo_wrap {
-  width: 110px;
-  height: 110px;
+  width: 80px;
+  height: 80px;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -33,19 +32,30 @@ h2 {
   font-family: 'Numans', sans-serif;
   font-weight: 400;
   font-size: 25px;
-  color: #32304c9f;
+  color: #434068c1;
+}
+.line {
+  width: 90%;
+  height: 5vh;
+  margin: 0 auto;
+  border-top: 1px solid #32304c44;
+}
+.line_text {
+  margin: -10px auto;
+  text-align: center;
+  width: 260px;
+  font-family: 'Numans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #32304c44;
+  background: #F6F6FF;
 }
 section {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-p {
-  text-align: center;
-  font-family: 'Numans', sans-serif;
-  color: #a598afb8;
-}
-.portfolio_wrap {
+/* .portfolio_wrap {
   display: flex;
   align-items: start;
   flex-wrap: nowrap;
@@ -70,7 +80,7 @@ p {
 .project_img {
   max-width: 100%;
   object-fit: contain;
-}
+} */
 .social_links {
   z-index: 10;
   position: fixed;
@@ -209,31 +219,44 @@ p {
     height: auto;
     overflow: auto;
   }
+  header {
+    padding: 20px 10px 40px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  .accordion *:hover {
+    pointer-events: none;
+  }
   .accordion {
+    margin-top: 20px;
     position: static;
     height: auto;
-    display: block;
   }
   .accordion ul {
     display: block;
-    height: auto
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px 5%;
+    flex-wrap: wrap;
   }
   .accordion ul li {
     display: block;
-    height: 90vh;
-    width: 100%;
-    margin-bottom: 40px;
+    height: 250px;
+    min-width: 45%;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.10);
+    border: none;
   }
-  .accordion ul:hover, .accordion ul:hover li:hover {
-    width: 100% !important;
-    border-radius: 20px;
+  .accordion ul li div a h2 {
+    opacity: 100%;
+    bottom: -24px;
+    top: auto;
+    font-size: 16px;
   }
-  /* .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
-    position: relative;
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    -webkit-transition: none;
-    transition: none;
-  } */
 }

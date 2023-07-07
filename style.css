@@ -147,21 +147,23 @@ h2 {
 .accordion ul li:focus, .accordion ul:focus-within li:focus {
   width: 30%;
 }
-.accordion ul:hover li:hover a *,
-.accordion ul li:focus a *, .accordion ul:focus-within li:focus a * {
+.accordion ul:hover li:hover a h2,
+.accordion ul li:focus a h2, .accordion ul:focus-within li:focus a h2 {
   opacity: 1;
 }
 
-.accordion ul:hover li a * {
+.accordion ul:hover li a h2 {
   opacity: 0 !important;
 }
 .accordion ul:hover li:hover {
   width: 30% !important;
   border-radius: 30px;
 }
-.accordion ul:hover li:hover a * {
+.accordion ul:hover li:hover a h2 {
   opacity: 1 !important;
 }
+
+
 
 @media screen and (max-width: 700px) {
   body {
@@ -198,7 +200,7 @@ h2 {
   .accordion ul:hover li:hover {
     pointer-events: none;
   }
-  .accordion *:not(a):hover {
+  .accordion *:hover {
     pointer-events: none;
   }
   .accordion ul {

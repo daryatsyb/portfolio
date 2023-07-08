@@ -146,32 +146,6 @@ h2 {
 .accordion ul li:focus {
   outline: none;
 }
-/* .accordion ul:hover li, .accordion ul:focus-within li {
-  width: 10%;
-}
-.accordion ul li:focus {
-  outline: none;
-}
-.accordion ul:hover li:hover,
-.accordion ul li:focus, .accordion ul:focus-within li:focus {
-  width: 30%;
-}
-.accordion ul:hover li:hover a h2,
-.accordion ul li:focus a h2, .accordion ul:focus-within li:focus a h2 {
-  opacity: 1;
-}
-
-.accordion ul:hover li a h2 {
-  opacity: 0 !important;
-}
-.accordion ul:hover li:hover {
-  width: 30% !important;
-  border-radius: 30px;
-}
-.accordion ul:hover li:hover a h2 {
-  opacity: 1 !important;
-} */
-
 
 
 @media screen and (max-width: 700px) {
@@ -203,15 +177,6 @@ h2 {
     height: auto;
     padding-bottom: 140px;
   }
-  /* .accordion ul:hover li {
-    pointer-events: none;
-  }
-  .accordion ul:hover li:hover {
-    pointer-events: none;
-  } */
-  /* .accordion *:hover {
-    pointer-events: none;
-  } */
   .accordion ul {
     display: block;
     height: auto;
